@@ -8,7 +8,7 @@ This is a [CHIP-8](https://wikipedia.org/wiki/CHIP-8) emulator written in Rust a
 4. <i>(Optional:)</i> If the ROM is not functioning correctly and it was written for the original CHIP-8 interpreter, try changing the options under `Advanced Settings`
 
 ## Project Structure
-The actual CHIP-8 CPU emulation is written entirely in Rust, at `src/lib.rs`, and is a port of my C++ CHIP-8 Emulator that I wrote to practice Rust.
+The actual CHIP-8 CPU emulation is written entirely in Rust, at `src/lib.rs`, and is a port of [my C++ CHIP-8 Emulator](https://github.com/GalHorowitz/CHIP8Emulator) that I wrote to practice Rust.
 I also wrote some JS glue code (`static/index.js`) to handle the interface and canvas/audio, but I am not a web developer, so it might not be quality JS code.
 
 ## Compiling
