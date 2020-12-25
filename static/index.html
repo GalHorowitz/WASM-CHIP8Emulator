@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CHIP-8 Emulator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="main_container" class="vertical_flex">
+      <div>
+        <center>
+          <h1>CHIP-8 Emulator</h1>
+          <h4>Written in Rust, Compiled to WebAssembly!</h3>
+        </center>
+      </div>
+      <div id="top_bar">
+        <p>Loaded ROM: <span id="rom_filename">None</span></p>
+      </div>
+      <canvas id="game_screen" width="64" height=32></canvas>
+      <br>
+      <div>
+        <button id="start_game" class="control_button" disabled>Start Game</button>
+        <button id="mute" class="control_button">Mute Sound</button>
+        <button id="upload_rom" class="control_button">Upload ROM</button>
+      </div>
+      <br>
+      <div id="keyboard_div" class="vertical_flex">
+        <p id="keyboard_label">&nbsp;&nbsp;Hex Keyboard<sup>(?)</sup></p>
+        <table>
+        <tr>
+          <th><button id="key_1" class="key_button">1</button></th>
+          <th><button id="key_2" class="key_button">2</button></th>
+          <th><button id="key_3" class="key_button">3</button></th>
+          <th><button id="key_C" class="key_button">C</button></th>
+        </tr>
+        <tr>
+          <th><button id="key_4" class="key_button">4</button></th>
+          <th><button id="key_5" class="key_button">5</button></th>
+          <th><button id="key_6" class="key_button">6</button></th>
+          <th><button id="key_D" class="key_button">D</button></th>
+        </tr>
+        <tr>
+          <th><button id="key_7" class="key_button">7</button></th>
+          <th><button id="key_8" class="key_button">8</button></th>
+          <th><button id="key_9" class="key_button">9</button></th>
+          <th><button id="key_E" class="key_button">E</button></th>
+        </tr>
+        <tr>
+          <th><button id="key_A" class="key_button">A</button></th>
+          <th><button id="key_0" class="key_button">0</button></th>
+          <th><button id="key_B" class="key_button">B</button></th>
+          <th><button id="key_F" class="key_button">F</button></th>
+        </tr>
+      </table>
+      </div>
+      <br>
+      <div id="builtin_roms_div" class="vertical_flex">
+        <div>
+          <label for="rom_select">Load built-in ROM:</label>
+          <select id="rom_select" name="rom_select">
+            <option id="downloading_option">Downloading list...</option>
+          </select>
+          <button id="load_select_rom">Load</button>
+        </div>
+        <p id="rom_description"></p>
+      </div>
+    </div>
+    <div id="advanced_container" class="vertical_flex">
+      <h3 id="advanced_settings_title">Advanced Settings <span id="advanced_fold">▼</span></h3>
+      <div id="advanced_settings_panel" class="vertical_flex" style="display: none;">
+        <div id="clock_rate_div">
+          <label for="clock_rate">
+            Emulated CPU Clock Rate (HZ):
+            <input type=number id="clock_rate" name="clock_rate" min=1 value=600>
+          </label>
+        </div>
+        <div>
+          <span title="Instructions 8xy6 and 8xyE will shift Vy instead of Vx">
+            <label for="original_shift">
+              <input type="checkbox" id="original_shift" name="original_shift">
+              Use original shift instructions
+            </label>
+          </span>
+        </div>
+        <div>
+          <span title="Instructions Fx55 and Fx65 will increment I">
+            <label for="original_mem_acc">
+              <input type="checkbox" id="original_mem_acc" name="original_mem_acc">
+              Use original load/store instructions
+            </label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <input type="file" id="file_picker" style="display: none;">
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

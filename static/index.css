@@ -1,0 +1,129 @@
+body {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lavender;
+}
+
+#main_container {
+    margin-top: 1%;
+}
+
+.vertical_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#keyboard_label {
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #333;
+}
+
+.control_button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.upload_dragenter {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#game_screen {
+    width: 640px;
+    height: 320px;
+    border: 4px solid #333;
+
+    image-rendering: pixelated;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+.key_button {
+    width: 28px;
+    height: 28px;
+}
+
+.key_button:active, .key_button_pressed {
+    background-color: gray;
+}
+
+#top_bar {
+    width: 640px;
+}
+
+#rom_filename {
+    font-weight: bolder;
+}
+
+#rom_select {
+    width: 174px;
+}
+
+#rom_description {
+    height: 2em;
+    width: 590px;
+    text-align: center;
+}
+
+#builtin_roms_div {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-top: 4px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+#advanced_container {
+    padding-bottom: 20px;
+}
+
+#clock_rate_div {
+    margin-bottom: 4px;
+}
+
+#clock_rate {
+    width: 60px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

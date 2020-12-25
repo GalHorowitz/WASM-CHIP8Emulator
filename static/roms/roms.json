@@ -1,0 +1,106 @@
+[
+	{
+		"file": "15puzzle.rom",
+		"desc": "Press a key to move the hole to that key's position."
+	},
+	{
+		"file": "blinky.rom",
+		"desc": "Press 3/6 to move up/down, and 7/8 to move left/right."
+	},
+	{
+		"file": "blitz.rom",
+		"desc": "Press any key to advance title, Press 5 to drop bomb."
+	},
+	{
+		"file": "breakout.rom",
+		"desc": "Press 4/6 to move left/right."
+	},
+	{
+		"file": "brix.rom",
+		"desc": "Press 4/6 to move left/right."
+	},
+	{
+		"file": "connect4.rom",
+		"desc": "Press 4/6 to move column selector, Press 5 to drop a disc."
+	},
+	{
+		"file": "guess.rom",
+		"desc": "Think of a number from 0 through 63. Press 5 if you see the number on screen, press any other key if not."
+	},
+	{
+		"file": "hidden.rom",
+		"desc": "Press any key to advance title, move selector with 2/4/6/8 and select with 5."
+	},
+	{
+		"file": "invaders.rom",
+		"desc": "Press 5 to advance title, press 4/6 to move left/right, and 5 to shoot."
+	},
+	{
+		"file": "kaleid.rom",
+		"desc": "Press 2/4/6/8 to create a pattern. Press 0 when finished to generate kaleidoscope."
+	},
+	{
+		"file": "maze.rom",
+		"desc": ""
+	},
+	{
+		"file": "merlin.rom",
+		"desc": "Select square by pressing 5/6/8/9."
+	},
+	{
+		"file": "missile.rom",
+		"desc": "Press 8 to shoot."
+	},
+	{
+		"file": "pong.rom",
+		"desc": "Press 1/4 to move left paddle up/down, Press C/D to move right paddle up/down."
+	},
+	{
+		"file": "pong2.rom",
+		"desc": "Press 1/4 to move left paddle up/down, Press C/D to move right paddle up/down."
+	},
+	{
+		"file": "puzzle.rom",
+		"desc": "Press 2/4/6/8 to move hole."
+	},
+	{
+		"file": "squash.rom",
+		"desc": "Press 1/4 to move paddle up/down. Press any key to restart after losing."
+	},
+	{
+		"file": "syzygy.rom",
+		"desc": "Press F to advance title. Press 3/6 to move up/down, and 7/8 to move left/right. Press B to restart after losing."
+	},
+	{
+		"file": "tank.rom",
+		"desc": "Move with 2/4/6/8, shoot by pressing 5."
+	},
+	{
+		"file": "tetris.rom",
+		"desc": "Press 5/6 to move piece left/right, press 4 to rotate, and press 7 to move down fast."
+	},
+	{
+		"file": "tictac.rom",
+		"desc": "Press 1/2/3/4/5/6/7/8/9 to choose location."
+	},
+	{
+		"file": "ufo.rom",
+		"desc": "Press 4/5/6 to shoot left/up/right."
+	},
+	{
+		"file": "vbrix.rom",
+		"desc": "Press 7 to advance title, press 1/4 to move paddle up/down, press any key to restart after losing."
+	},
+	{
+		"file": "vers.rom",
+		"desc": "Press 1/7/A to control the first player, press C/D/F to control the second player."
+	},
+	{
+		"file": "wall.rom",
+		"desc": "Press 1/4 to move paddle up/down. Press any key to restart after losing."
+	},
+	{
+		"file": "wipeoff.rom",
+		"desc": "Press 4/6 to move left/right. Press any key to restart after losing."
+	}
+]
