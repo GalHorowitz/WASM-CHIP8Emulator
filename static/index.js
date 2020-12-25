@@ -48,7 +48,7 @@ async function init_wasm() {
 }
 
 async function populate_builtin_roms() {
-    const rom_list = await fetch('./roms/roms.json').then(resp => resp.json());
+    const rom_list = await fetch('./static/roms/roms.json').then(resp => resp.json());
     const rom_select = document.getElementById("rom_select");
 
     for(let rom_data of rom_list){
@@ -279,7 +279,7 @@ function setup_event_listeners() {
         const rom_select = document.getElementById("rom_select");
         if(rom_select.value.endsWith(".rom")){
             show_loading_rom();
-            set_loaded_rom_buffer(rom_select.value, await fetch('./roms/'+rom_select.value).then(resp => resp.arrayBuffer()));
+            set_loaded_rom_buffer(rom_select.value, await fetch('./static/roms/'+rom_select.value).then(resp => resp.arrayBuffer()));
 
             document.getElementById("rom_description").innerText = rom_descriptions[rom_select.selectedIndex];
         }
