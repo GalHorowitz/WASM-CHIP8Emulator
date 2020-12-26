@@ -222,13 +222,13 @@ function setup_event_listeners() {
     };
     const handle_keyup = (key_digit) => {
         key_state[key_digit] = false;
-            document.getElementById("key_"+key_digit.toString(16).toUpperCase()).classList.remove("key_button_pressed");
+        document.getElementById("key_"+key_digit.toString(16).toUpperCase()).classList.remove("key_button_pressed");
 
-            if (should_capture_key) {
-                should_capture_key = false;
-                finished_capture_key = true;
-                captured_key = key_digit;
-            }
+        if (should_capture_key) {
+            should_capture_key = false;
+            finished_capture_key = true;
+            captured_key = key_digit;
+        }
     };
 
     document.addEventListener("keydown", ev => {
@@ -257,7 +257,8 @@ function setup_event_listeners() {
             handle_keyup(i);
         });
         document.getElementById("key_"+i.toString(16).toUpperCase()).addEventListener("mouseleave", ev => {
-            handle_keyup(i);
+            if(key_state[i])
+                handle_keyup(i);
         });
     }
 
